@@ -1,0 +1,19 @@
+  
+button.dropdown-item {
+  padding: 7px;
+  margin-left: 0;
+    
+  &:hover {
+    background-color: transparent; }
+}
+    
+.dropdown-menu.dropdown-menu-right{
+  text-align: right;
+  border: 5px solid rgba(0, 0, 0, 0.9);
+  border-top: none;
+  margin: 0.8rem 0 0;
+  top:2.3rem ;
+  &.show {
+    background-color: rgba(0, 0, 0, 0.75); 
+  }
+}
