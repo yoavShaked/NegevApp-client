@@ -48,7 +48,7 @@ export default class MainNavBar extends Component {
                                 <NavLink href="#">הכנסת גידולים</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="#">ניתוח תכנון קיים</NavLink>
+                                <NavLink href="/PredictCrops">ניתוח תכנון קיים</NavLink>
                             </NavItem>
                             <NavItem>
                                 <NavLink href="#">איזורי התכנות</NavLink>

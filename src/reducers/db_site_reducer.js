@@ -2,7 +2,7 @@ import {
     FETCH_SITES, 
     UPDATE_SITE, 
     POST_SITE, 
-    DELETE_SITE } from '../actions/index';
+    DELETE_SITE, CROPS_PREDICT } from '../actions/index';
 
     export default function(state = [], action)
 {
@@ -12,6 +12,7 @@ import {
         case UPDATE_SITE:
         case POST_SITE:
         case DELETE_SITE:
+        case CROPS_PREDICT:
             return action.payload.data;
         
         default:

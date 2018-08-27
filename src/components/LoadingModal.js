@@ -10,8 +10,6 @@ class LoadingModal extends Component {
 
         this.firstRender = true;
         this.visibility_choise = props.visibility;
-        
-
     }
 
     render()

@@ -20,7 +20,6 @@ export function toggle_drawing_state()
     };
 }
 
-/////////////////////TO DO/////////////////////////
 export const FETCH_LAYERS_NAMES = "FETCH_LAYERS_NAMES";
 export function fetch_layers_names()
 {
@@ -77,7 +76,6 @@ export function unselect_layer(layer_id)
     }
 }
 
-//CHANGE URL
 export const FETCH_ALL_SITES = "FETCH_ALL_SITES";
 export function fetch_all_sites(onStart,onEnd)
 {
@@ -311,5 +309,14 @@ export function postNewCrop(cropToPost){
 }
 
 
+export const CROPS_PREDICT = 'crops_predict';
+export function predictCrops(siteID){
 
+    const request = axios.get(`${url}site/predict?i_SiteID=${siteID}`);
+
+    return{
+        type: CROPS_PREDICT,
+        payload: request
+    };
+}
 

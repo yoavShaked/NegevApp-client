@@ -30,7 +30,8 @@ const rootReducer = combineReducers({
   loadingModal:LoadingModal,
   sites_db: SiteDB,
   layers_db: LayerDB,
-  crops_db: CropDB
+  crops_db: CropDB,
+  cropsResult:SiteDB
 });
 
 export default rootReducer;
