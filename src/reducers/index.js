@@ -17,6 +17,7 @@ import LoadingModal from './LoadingModal_Reducer';
 import SiteDB from './db_site_reducer';
 import CropDB from './db_crop_reducer';
 import LayerDB from './db_layer_reducer';
+import Predict from './reducer_predictCrops';
 
 const rootReducer = combineReducers({
   layersNames:LayersNames,
@@ -31,7 +32,7 @@ const rootReducer = combineReducers({
   sites_db: SiteDB,
   layers_db: LayerDB,
   crops_db: CropDB,
-  cropsResult:SiteDB
+  cropsResults: Predict
 });
 
 export default rootReducer;

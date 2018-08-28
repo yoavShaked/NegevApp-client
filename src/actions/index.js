@@ -309,11 +309,15 @@ export function postNewCrop(cropToPost){
 }
 
 
-export const CROPS_PREDICT = 'crops_predict';
-export function predictCrops(siteID){
+export const CROPS_PREDICT = "crops_prediction";
+export function predictCrops(site_id){
 
-    const request = axios.get(`${url}site/predict?i_SiteID=${siteID}`);
+    console.log("111111111111");
+    console.log(site_id);
 
+    const request = axios.get(`${url}/site/predict?i_SiteID=${site_id}`);
+    console.log(request);
+    
     return{
         type: CROPS_PREDICT,
         payload: request

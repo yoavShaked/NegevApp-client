@@ -178,3 +178,8 @@ nav.navbar {
 
 .manama {
   display: inline-flex; }
+
+  .modal-size{
+    height: 300px;
+    
+  }

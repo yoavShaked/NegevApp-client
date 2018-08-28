@@ -23,7 +23,7 @@ export default function(state = [], action)
         case DELETE_CROP:
         {
             return action.payload.data;
-        }        
+        }      
         default:
         {
             return state;

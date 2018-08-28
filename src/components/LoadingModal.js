@@ -31,7 +31,6 @@ class LoadingModal extends Component {
                         <Progress striped color="success" value={this.props.loadingModal.progress} />
                     </Container>
                 </ModalBody>
-
             </Modal>
         );
     }

@@ -226,7 +226,6 @@ class GoogleMap extends Component {
         
         layer.SitesByYears.forEach(site_by_year => 
         {
-            console.log()
             if(this.sites_polygons[site_by_year.SiteID].sites_by_years.length == 0)
                 this.sites_polygons[site_by_year.SiteID].polygon.setMap(this.map);
             this.sites_polygons[site_by_year.SiteID].sites_by_years.push(site_by_year);
