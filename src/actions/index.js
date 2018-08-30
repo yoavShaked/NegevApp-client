@@ -80,8 +80,10 @@ export const FETCH_ALL_SITES = "FETCH_ALL_SITES";
 export function fetch_all_sites(onStart,onEnd)
 {
     onStart();
+    console.log("ma1");
     const request = axios.get(`${url}/site/allsites`).then(function (response) {
         onEnd();
+        console.log("response",response);
         return response;
       });
 

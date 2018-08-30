@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter ,Progress,Container} from 'reactstrap';
+import { change_loading_modal } from '../actions';
 
 class LoadingModal extends Component {
 
@@ -19,6 +20,7 @@ class LoadingModal extends Component {
         {
             this.firstRender = false;
         }
+        console.log(is_first_render);
         return (
 
             <Modal isOpen={is_first_render?this.visibility_choise:this.props.loadingModal.visibility}>

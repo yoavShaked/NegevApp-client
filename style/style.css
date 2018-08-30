@@ -30,7 +30,7 @@ div.app-page {
   padding: 30px; }
 
 .database-page {
-  background-image: linear-gradient(to left bottom, transparent, rgba(87, 165, 92, 0)), url(../images/HistoryBackground.jpg);
+  background-image: linear-gradient(to left bottom, rgba(0, 0, 0, 0), rgba(87, 165, 92, 0)), url(../images/HistoryBackground.jpg);
   height: 100%;
   width: 100%;
   background-size: cover;
@@ -125,6 +125,9 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%; }
 
+.predictPage #map {
+  height: 85.5vh; }
+
 #siteData {
   overflow: auto;
   text-align: right;
@@ -179,7 +182,10 @@ nav.navbar {
 .manama {
   display: inline-flex; }
 
-  .modal-size{
-    height: 300px;
-    
-  }
+.modal-predict-crops-main {
+  max-height: calc(100vh - 200px);
+  overflow-y: auto; }
+
+.table-text-prdict-crops {
+  text-align: right;
+  height: 200px; }

@@ -7,7 +7,8 @@ export default function (state = [],action)
     {
         case  FETCH_ALL_SITES:
             let sites = [];
-            console.log(action.payload.data);
+            console.log("ma2");
+            console.log("action.payload.data ",action.payload.data);
             action.payload.data.forEach(site =>{
                 sites[site.ID] = site;
 

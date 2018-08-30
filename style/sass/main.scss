@@ -17,7 +17,9 @@
 
 
   
-
+.predictPage #map{
+  height: 85.5vh;
+}
   
   #siteData {
     overflow: auto;
@@ -44,12 +46,14 @@
     background-color: rgba(255,238,147, 0.1) !important;
   }
   
+  
 
   
   .gradientText {
     background: -webkit-linear-gradient(#3ca55c, #b5ac49);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
   }
   
   .logoStap
@@ -108,5 +112,15 @@
   }
   
   
+  
 
+  .modal-predict-crops-main{
+    max-height: calc(100vh - 200px);
+    overflow-y: auto;
+  }
+  
+  .table-text-prdict-crops{
+    text-align: right;
+    height: 200px;
+  }
   
